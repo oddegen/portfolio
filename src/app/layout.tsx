@@ -59,13 +59,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cx(
-          "text-stone-300 bg-gradient-to-tr from-neutral-950 to-neutral-700 antialiased max-w-xl mx-auto min-h-screen",
+          "text-stone-300 bg-gradient-to-tr from-neutral-950 to-neutral-900 antialiased max-w-xl mx-auto min-h-screen",
           GeistSans.variable,
           GeistMono.variable
         )}
       >
         <NextTheme forcedTheme="dark">
-          <main className="flex flex-col px-2 md:px-0 gap-4 py-4 min-h-screen justify-center">
+          <main className="flex flex-col px-2 md:px-0 gap-4 py-4 min-h-screen justify-between">
             <main className="flex flex-col gap-4">
               <Header />
               {children}
