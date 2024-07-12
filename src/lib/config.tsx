@@ -97,7 +97,7 @@ interface IConfig {
 export const config: IConfig = {
   baseUrl:
     process.env.NODE_ENV === "production"
-      ? process.env.NEXT_PUBLIC_BASE_URL ?? ""
+      ? process.env.NEXT_PUBLIC_VERCEL_URL!
       : "http://localhost:3000",
   name: "Nahom Tensaebirhan",
   welcome: "Hey there 👋🏽",
