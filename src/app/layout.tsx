@@ -65,7 +65,7 @@ export default function RootLayout({
         )}
       >
         <NextTheme forcedTheme="dark">
-          <main className="flex flex-col px-2 md:px-0 gap-4 py-4 min-h-screen justify-between">
+          <main className="flex flex-col px-2 md:px-0 gap-4 py-6 min-h-screen justify-between">
             <main className="flex flex-col gap-4">
               <Header />
               {children}

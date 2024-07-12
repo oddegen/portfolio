@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="border-b border-neutral-800 pb-2 flex gap-2 items-center justify-between">
+    <header className="flex gap-2 items-center justify-between">
       <nav>
         <ul className="flex items-center gap-2">
           {config.navItems?.map((item) => (
