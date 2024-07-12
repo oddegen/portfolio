@@ -62,7 +62,7 @@ interface IConfig {
    * if your CV is in the root of the public folder, you
    * can just put "/cv.pdf".
    */
-  cv: string;
+  cv?: string;
   /**
    * Metadata for the website.
    */
@@ -139,7 +139,6 @@ export const config: IConfig = {
       stackIcons: ["linux", "terminal", "c"],
     },
   ],
-  cv: "/cv.pdf",
   metadata: {
     title: "Nahom's Portfolio",
     description: "Personal website of Nahom",
