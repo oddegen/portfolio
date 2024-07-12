@@ -6,7 +6,7 @@ const social = config.social;
 
 export default function Footer() {
   return (
-    <footer className="border-t border-neutral-800 py-2 flex justify-end items-center">
+    <footer className="py-2 flex justify-end items-center">
       {config.cv && (
         <Link href={config.cv} download target="_blank">
           <div className="flex items-center gap-4">
