@@ -5,7 +5,6 @@ import { GeistMono } from "geist/font/mono";
 import Footer from "../components/footer";
 import { NextTheme } from "../components/providers";
 import Header from "../components/header";
-import Loglib from "@loglib/tracker/react";
 import { cx } from "src/lib/utils";
 import { config } from "@/lib/config";
 
@@ -58,30 +57,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <NextTheme forcedTheme="dark">
-        <body
-          className={cx(
-            "text-stone-300 bg-gradient-to-tr from-neutral-950 to-neutral-900 antialiased max-w-xl lg:mx-auto min-h-screen px-6 md:px-0",
-            GeistSans.variable,
-            GeistMono.variable
-          )}
-        >
-          <main className="flex flex-col px-2 md:px-0 gap-4 py-6 min-h-screen justify-between">
+      <body
+        className={cx(
+          "text-stone-300 bg-gradient-to-tr from-neutral-950 to-neutral-700 antialiased max-w-xl mx-auto min-h-screen",
+          GeistSans.variable,
+          GeistMono.variable
+        )}
+      >
+        <NextTheme forcedTheme="dark">
+          <main className="flex flex-col px-2 md:px-0 gap-4 py-4 min-h-screen justify-center">
             <main className="flex flex-col gap-4">
               <Header />
               {children}
             </main>
             <Footer />
-            {config.analytics && (
-              <Loglib
-                config={{
-                  id: config.analytics,
-                }}
-              />
-            )}
           </main>
-        </body>
-      </NextTheme>
+          <svg className="absolute left-0 top-0">
+            <filter id="grain">
+              <feTurbulence type="turbulence" baseFrequency="0.65" />
+            </filter>
+          </svg>
+        </NextTheme>
+      </body>
     </html>
   );
 }

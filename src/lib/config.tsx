@@ -43,7 +43,7 @@ interface IConfig {
    * Navigation items. This will be displayed in the
    * header.
    */
-  navItems: {
+  navItems?: {
     name: string;
     href: string;
   }[];
@@ -99,31 +99,50 @@ export const config: IConfig = {
     process.env.NODE_ENV === "production"
       ? process.env.NEXT_PUBLIC_BASE_URL ?? ""
       : "http://localhost:3000",
-  name: "Your Name",
+  name: "Nahom Tensaebirhan",
   welcome: "Hey there 👋🏽",
-  bio: <p>I'm Some one. I'm a software engineer and I love building things.</p>,
+  bio: <p>I'm Nahom. I'm a software engineer and I love building things.</p>,
   social: {
-    github: "",
-    x: "",
-    telegram: "",
+    github: "oddegen",
+    telegram: "Phgoat",
   },
-  email: "",
-  navItems: [
-    {
-      name: "_home",
-      href: "/",
-    },
-  ],
+  email: "nahomtensae@gmail.com",
   projects: [
     {
-      title: "loglib",
-      description: "Privacy first, open source web analytics.",
-      link: "https://loglib.io",
+      title: "snippets",
+      description: "A code snippet notes app",
+      link: "https://github.com/oddegen/snippets",
+      stackIcons: ["javascript", "nextJs", "tailwind", "typescript"],
+    },
+    {
+      title: "tinyrouter",
+      description: "A light weight router in Go",
+      link: "https://github.com/oddegen/tinyrouter",
+      stackIcons: ["go"],
+    },
+    {
+      title: "mazs",
+      description: "A maze algorithm visualizer",
+      link: "https://github.com/oddegen/mazs",
+      stackIcons: ["javascript", "nextJs", "tailwind", "typescript"],
+    },
+    {
+      title: "pickMe",
+      description: "A windows terminal based colorpicker",
+      link: "https://github.com/oddegen/pickMe",
+      stackIcons: ["c", "cpp"],
+    },
+    {
+      title: "dotfiles",
+      description: "Linux rice files",
+      link: "https://github.com/oddegen/dotfiles",
+      stackIcons: ["linux", "terminal", "c"],
     },
   ],
   cv: "/cv.pdf",
   metadata: {
-    title: "Your Name",
-    description: "Personal website of Your Name",
+    title: "Nahom's Portfolio",
+    description: "Personal website of Nahom",
+    ogImage: "/api/og",
   },
 };

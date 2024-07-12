@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-neutral-800 py-2 flex justify-between items-center">
       <Link href={config.cv} download target="_blank">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
@@ -68,7 +68,7 @@ export default function Footer() {
               target="_blank"
               href={`https://t.me/${social.telegram}`}
             >
-              <Icons icon="email" />
+              <Icons icon="telegram" />
             </a>
           </li>
         )}

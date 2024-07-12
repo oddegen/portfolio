@@ -21,8 +21,8 @@ export default function Page() {
             </Link>
             <p className="text-neutral-400">{project.description}</p>
             <div className="flex items-center gap-2">
-              {project.stackIcons?.map((icon) => (
-                <Icons icon={icon} />
+              {project.stackIcons?.map((icon, idx) => (
+                <Icons key={idx} icon={icon} />
               ))}
             </div>
           </div>
