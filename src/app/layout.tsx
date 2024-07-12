@@ -59,7 +59,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cx(
-          "text-stone-300 bg-gradient-to-tr from-neutral-950 to-neutral-900 antialiased max-w-xl mx-auto max-h-screen",
+          "text-stone-300 bg-gradient-to-tr from-neutral-950 to-neutral-900 antialiased max-w-xl mx-auto max-h-svh",
           GeistSans.variable,
           GeistMono.variable
         )}

@@ -101,7 +101,17 @@ export const config: IConfig = {
       : "http://localhost:3000",
   name: "Nahom Tensaebirhan",
   welcome: "Hey there 👋🏽",
-  bio: <p>I'm Nahom. I'm a software engineer and I love building things.</p>,
+  bio: (
+    <p>
+      Hello, <span className="text-green-500">I'm Nahom</span>! I'm a passionate
+      software engineer with a love for building innovative and impactful
+      solutions. My journey in technology has been driven by a relentless
+      curiosity and a dedication to creating applications that make a
+      difference. Whether it's developing efficient back-end systems, crafting
+      user-friendly interfaces, or exploring new technologies, I'm always eager
+      to take on new challenges and bring ideas to life.
+    </p>
+  ),
   social: {
     github: "oddegen",
     telegram: "Phgoat",
